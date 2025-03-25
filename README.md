@@ -68,4 +68,4 @@ Recognition history viewer (view/copy past results)
 Cloud-based Whisper API option for lightweight use
 
 
-##欢迎大家开发想要的功能，或对需要的功能进行留言
+## 欢迎大家开发想要的功能，或对需要的功能进行留言
