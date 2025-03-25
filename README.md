@@ -1,35 +1,68 @@
-# 🎙️ Whisper 悬浮窗语音输入助手
-简单的whisper语音转文字（STT）快捷语音输入悬浮窗。本地部署windows版，数据更安全
-基于 [OpenAI Whisper](https://github.com/openai/whisper) 的桌面悬浮窗录音转文字工具。它可在任意界面上方悬浮，点击即可开始/结束录音，录音结束后自动识别文字、复制到剪贴板，并以聊天气泡形式显示在窗口中。
+# 🎙️ Whisper 悬浮窗语音输入助手  
+**Whisper Floating Speech Input Assistant**
 
-推荐使用turbo以上模型，准确率非常高，中英混合输入也非常准确。
-turbo模型运行最低配置：显存VRAM=6GB
-推荐配置： 显存VRAM<8GB
-如果配置无法满足turbo模型，建议使用国内免费大模型（开发中）。
+一个简单易用的 Whisper 语音转文字（Speech-to-Text, STT）桌面悬浮窗程序，支持本地部署（Windows），数据更安全，适用于快捷语音输入场景。  
+A lightweight, local-first floating window tool for voice-to-text using OpenAI Whisper — optimized for quick voice input on Windows.
 
----
-
-## 🚀 功能特性
-
-![1742896337415](https://github.com/user-attachments/assets/805b7edc-8c0d-417d-a9e7-c3dfee018605)
-
-- 🎤 一键悬浮录音
-- 🤖 推荐 Whisper 本地模型 ('turbo', `large-v3`)
-- 🧠 Whisper 自动识别语音 + 中英混输
-- 🔁 自动将繁体转换为简体（使用 OpenCC）
-- 📋 自动复制识别结果到剪贴板
-- 💬 聊天气泡样式输出识别文字
-- 🧩 可在右键菜单中切换模型
-- 🌈 无边框、圆角、可拖动、始终置顶悬浮窗
-
-![image](https://github.com/user-attachments/assets/274580f7-42c2-4e82-8be5-b1167c2c1792)
+基于 [OpenAI Whisper](https://github.com/openai/whisper)，录音识别后文字自动复制到剪贴板，并以聊天气泡形式显示在界面上。  
+Built with [OpenAI Whisper](https://github.com/openai/whisper), it records your voice, transcribes it locally, auto-copies the result, and shows it in a chat-bubble style window.
 
 ---
 
-## 📦 安装依赖
+### 🚀 推荐模型 | Recommended Model
 
-首先请确保你已安装 Python 3.8+，
-然后运行以下命令：
+建议使用 `turbo` 或 `large-v3` 模型以获得更高准确率，特别适用于中英文混合语音输入。  
+It is highly recommended to use `turbo` or `large-v3` for better accuracy, especially for mixed Chinese-English input.
+
+- ✅ `turbo` 最低配置要求：显存 VRAM ≥ 6GB  
+  Minimum for `turbo`: VRAM ≥ 6GB
+
+- ✅ 推荐配置：VRAM ≥ 8GB  
+  Recommended: VRAM ≥ 8GB
+
+如果配置较低，可切换使用较小模型，或考虑接入国内免费大模型（开发中）。  
+Lower-end devices can use smaller models, or consider future integration of local Chinese large models (WIP).
+
+---
+
+## 🎯 功能特性 | Features
+
+![功能图1](https://github.com/user-attachments/assets/805b7edc-8c0d-417d-a9e7-c3dfee018605)
+
+- 🎤 一键悬浮录音  
+  One-click floating voice recorder
+
+- 🧠 支持 Whisper 本地模型 (`tiny`, `base`, `small`, `medium`, `large-v3`, `turbo`)  
+  Supports local Whisper models (including turbo)
+
+- 🌐 中英文自动识别  
+  Seamless Chinese-English transcription
+
+- 🔁 自动将繁体转换为简体（OpenCC）  
+  Auto converts Traditional Chinese → Simplified Chinese (via OpenCC)
+
+- 📋 自动复制识别文字到剪贴板  
+  Auto copy transcription to clipboard
+
+- 💬 气泡式文本展示  
+  Chat-bubble style result display
+
+- 🧩 右键切换模型  
+  Right-click to switch model on the fly
+
+- 🌈 无边框、圆角、可拖动、置顶悬浮窗  
+  Borderless, rounded, draggable, always-on-top UI
+
+![功能图2](https://github.com/user-attachments/assets/274580f7-42c2-4e82-8be5-b1167c2c1792)
+
+---
+
+## 📦 安装依赖 | Install Requirements
+
+确保你的系统安装了 Python ≥ 3.8  
+Make sure Python 3.8 or higher is installed.
+
+安装依赖：
 
 ```bash
 pip install -r requirements.txt
