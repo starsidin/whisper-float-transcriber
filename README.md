@@ -1,8 +1,6 @@
-# whisper-typing
-简单的whisper语音转文字（STT）快捷语音输入悬浮窗。本地部署windows版，数据更安全
 # 🎙️ Whisper 悬浮窗录音识别助手
-
-这是一个基于 [OpenAI Whisper](https://github.com/openai/whisper) 的桌面悬浮窗录音转文字工具。它可在任意界面上方悬浮，点击即可开始/结束录音，录音结束后自动识别文字、复制到剪贴板，并以聊天气泡形式显示在窗口中。
+简单的whisper语音转文字（STT）快捷语音输入悬浮窗。本地部署windows版，数据更安全
+基于 [OpenAI Whisper](https://github.com/openai/whisper) 的桌面悬浮窗录音转文字工具。它可在任意界面上方悬浮，点击即可开始/结束录音，录音结束后自动识别文字、复制到剪贴板，并以聊天气泡形式显示在窗口中。
 
 ---
 
