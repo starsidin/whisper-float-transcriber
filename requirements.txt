@@ -1,0 +1,12 @@
+sys
+os
+datetime
+whisper
+torch
+sounddevice
+soundfile
+pyperclip
+opencc
+PyQt6
+ffmpeg
+openai-whisper
